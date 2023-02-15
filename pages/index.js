@@ -4,19 +4,13 @@ import styles from "./index.module.css";
 
 export default function Home() {
   const [cityInput, setCityInput] = useState("");
-  let csList =
-    "Sydney Opera House, Bondi Beach, Royal Botanic Garden, Taronga Zoo, The Rocks, Sydney Harbour Bridge, Manly Beach, Queen Victoria Building, Luna Park, Sydney Tower";
-
-  const initialResultList = csList.split(", ");
-  console.log("initialResultList");
-  console.log(initialResultList);
-
   const [result, setResult] = useState([]);
   const [loading, setLoading] = useState(false);
 
   async function onSubmit(event) {
     event.preventDefault();
     setLoading(true);
+    setResult([]);
     try {
       const response = await fetch("/api/generate", {
         method: "POST",
@@ -57,7 +51,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>OpenAI Quickstart</title>
+        <title>Top 10 places</title>
         <link rel="icon" href="/place.png" />
       </Head>
 
