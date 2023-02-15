@@ -58,6 +58,7 @@ export default function Home() {
       <main className={styles.main}>
         <img src="/place.png" className={styles.icon} />
         <h3>Top 10 places</h3>
+        <p>Ask ChatGPT and Plan your travel using AI</p>
         <form onSubmit={onSubmit}>
           <input
             type="text"
