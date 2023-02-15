@@ -81,6 +81,15 @@ export default function Home() {
             ))}
           </ol>
         </div>
+        <div className={styles.bottom}>
+          An AI Experiment by ©{" "}
+          <a
+            href="https://www.linkedin.com/in/akashdeepsinghal/"
+            target={"_blank"}
+          >
+            Akash Singhal
+          </a>{" "}
+        </div>
       </main>
     </div>
   );

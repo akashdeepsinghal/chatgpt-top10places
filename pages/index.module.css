@@ -88,3 +88,7 @@
   font-weight: bold;
   margin-top: 40px;
 }
+.main .bottom {
+  position: absolute;
+  bottom: 10px;
+}
